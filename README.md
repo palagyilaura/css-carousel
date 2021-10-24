@@ -1,4 +1,4 @@
-<a href="https://plara-css-carousel.vercel.app/">Live Demo</a>
+<a href="https://plara-css-carousel.vercel.app/">Live Demo </a>
 
 # Getting Started with Create React App
 

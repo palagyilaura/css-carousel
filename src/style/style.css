@@ -1,0 +1,121 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 960px;
+  margin: 10px auto;
+}
+
+.carousel .inner {
+  white-space: nowrap;
+  margin: auto;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.carousel .inner .card {
+  width: 240px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid transparent;
+  background: rgba(173, 216, 230, 0.5);
+  padding: 10px;
+}
+
+.carousel .inner .card .content {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel .inner .card .content .site {
+  text-align: center;
+}
+
+.carousel .inner .card .content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+.carousel .inner .card .content div p {
+  margin: 0;
+}
+
+.carousel .inner .card .content div .factImpressions {
+  cursor: pointer;
+  color: lightseagreen;
+}
+
+.carousel .inner .card .content div .diff {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.carousel .inner .card:nth-child(3) {
+  border: 1px solid purple;
+}
+
+.btn-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  margin-top: 15px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.btn-group .prev,
+.btn-group .next,
+.btn-group .cardOrder {
+  cursor: pointer;
+  width: auto;
+  padding: 7px 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-group .cardOrder {
+  background: lightslategrey;
+}
+
+.btn-group .prev,
+.btn-group .next {
+  background: lightseagreen;
+}
+
+@media only screen and (max-width: 520px) {
+  .carousel {
+    width: 90%;
+  }
+  .carousel .inner .card {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

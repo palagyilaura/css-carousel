@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 960px;
+  margin: 10px auto;
+
+  .inner {
+    white-space: nowrap;
+    margin: auto;
+    transition: transform 0.3s;
+
+    .card {
+      width: 240px;
+      display: inline-flex;
+      border: 1px solid transparent;
+      background: rgba(173, 216, 230, 0.5);
+      padding: 10px;
+
+      .content {
+        height: 100%;
+        width: 100%;
+        .site {
+          text-align: center;
+        }
+        div {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 10px;
+          p {
+            margin: 0;
+          }
+          .factImpressions {
+            cursor: pointer;
+            color: lightseagreen;
+          }
+          .diff {
+            border: 1px solid white;
+            padding: 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    .card:nth-child(3) {
+      border: 1px solid purple;
+    }
+  }
+}
+
+.btn-group {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 15px;
+  justify-content: space-around;
+  .prev,
+  .next,
+  .cardOrder {
+    cursor: pointer;
+    width: auto;
+    padding: 7px 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: 0.6s ease;
+    border-radius: 15px;
+    user-select: none;
+  }
+  .cardOrder {
+    background: lightslategrey;
+  }
+  .prev,
+  .next {
+    background: lightseagreen;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .carousel {
+    width: 90%;
+
+    .inner {
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
